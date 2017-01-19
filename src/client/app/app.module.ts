@@ -1,3 +1,4 @@
+import { routing } from './app.routing';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { APP_BASE_HREF } from '@angular/common';
@@ -23,7 +24,7 @@ import {ShoppingListAddComponent} from './recipes/shopping-list/shopping-list-ad
 import {DropdownDirective} from './dropdown.directive';
 
 @NgModule({
-  imports: [BrowserModule, HttpModule, AppRoutingModule, SharedModule.forRoot()],
+  imports: [BrowserModule, HttpModule, AppRoutingModule, SharedModule.forRoot(), routing],
   declarations: [AppComponent, HeaderComponent, RecipesComponent, 
   RecipeListComponent, RecipeItemComponent, RecipeDetailComponent, 
   ShoppingListComponent, ShoppingListAddComponent, DropdownDirective],
