@@ -1,3 +1,5 @@
+import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
+import { RecipeStartComponent } from './recipes/recipe-start.component';
 import { routing } from './app.routing';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -27,7 +29,8 @@ import {DropdownDirective} from './dropdown.directive';
   imports: [BrowserModule, HttpModule, AppRoutingModule, SharedModule.forRoot(), routing],
   declarations: [AppComponent, HeaderComponent, RecipesComponent, 
   RecipeListComponent, RecipeItemComponent, RecipeDetailComponent, 
-  ShoppingListComponent, ShoppingListAddComponent, DropdownDirective],
+  ShoppingListComponent, ShoppingListAddComponent, DropdownDirective,
+  RecipeStartComponent, RecipeEditComponent],
   providers: [{
     provide: APP_BASE_HREF,
     useValue: '<%= APP_BASE %>'
